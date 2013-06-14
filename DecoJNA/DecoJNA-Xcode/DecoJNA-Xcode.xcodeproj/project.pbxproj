@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6380065F136F5F7D0068FE1A /* deco.h in Headers */ = {isa = PBXBuildFile; fileRef = 63800656136F5F7D0068FE1A /* deco.h */; };
+		63800660136F5F7D0068FE1A /* procem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63800657136F5F7D0068FE1A /* procem.cpp */; };
+		63800661136F5F7D0068FE1A /* process.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63800658136F5F7D0068FE1A /* process.cpp */; };
+		63800662136F5F7D0068FE1A /* process.h in Headers */ = {isa = PBXBuildFile; fileRef = 63800659136F5F7D0068FE1A /* process.h */; };
+		63800663136F5F7D0068FE1A /* proclls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6380065A136F5F7D0068FE1A /* proclls.cpp */; };
+		63800664136F5F7D0068FE1A /* procmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6380065B136F5F7D0068FE1A /* procmap.cpp */; };
+		63800665136F5F7D0068FE1A /* stackdata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6380065C136F5F7D0068FE1A /* stackdata.cpp */; };
+		63800666136F5F7D0068FE1A /* stackdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 6380065D136F5F7D0068FE1A /* stackdata.h */; };
+		63800667136F5F7D0068FE1A /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6380065E136F5F7D0068FE1A /* util.cpp */; };
+		6380066D136F5FC00068FE1A /* libfftw3f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6380066C136F5FC00068FE1A /* libfftw3f.a */; };
+		63800697136F626B0068FE1A /* libDecoJNA.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libDecoJNA.dylib */; };
+		638006A0136F62C80068FE1A /* testDecoJNA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6380069C136F628B0068FE1A /* testDecoJNA.cpp */; };
+		63862225136F70A90018E74F /* libfftw3f_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6380066A136F5FC00068FE1A /* libfftw3f_threads.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63800695136F62670068FE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0620554660B00DB518D;
+			remoteInfo = "DecoJNA-Xcode";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63800656136F5F7D0068FE1A /* deco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deco.h; path = ../src/deco.h; sourceTree = SOURCE_ROOT; };
+		63800657136F5F7D0068FE1A /* procem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = procem.cpp; path = ../src/procem.cpp; sourceTree = SOURCE_ROOT; };
+		63800658136F5F7D0068FE1A /* process.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = process.cpp; path = ../src/process.cpp; sourceTree = SOURCE_ROOT; };
+		63800659136F5F7D0068FE1A /* process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = process.h; path = ../src/process.h; sourceTree = SOURCE_ROOT; };
+		6380065A136F5F7D0068FE1A /* proclls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = proclls.cpp; path = ../src/proclls.cpp; sourceTree = SOURCE_ROOT; };
+		6380065B136F5F7D0068FE1A /* procmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = procmap.cpp; path = ../src/procmap.cpp; sourceTree = SOURCE_ROOT; };
+		6380065C136F5F7D0068FE1A /* stackdata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stackdata.cpp; path = ../src/stackdata.cpp; sourceTree = SOURCE_ROOT; };
+		6380065D136F5F7D0068FE1A /* stackdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stackdata.h; path = ../src/stackdata.h; sourceTree = SOURCE_ROOT; };
+		6380065E136F5F7D0068FE1A /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = ../src/util.cpp; sourceTree = SOURCE_ROOT; };
+		6380066A136F5FC00068FE1A /* libfftw3f_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f_threads.a; path = /Users/jrkuhn/Devel/kuhnlab/jprojects/DecoJ/branch/DecoJ_Client/fftwdist/osx/lib/libfftw3f_threads.a; sourceTree = "<absolute>"; };
+		6380066C136F5FC00068FE1A /* libfftw3f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f.a; path = /Users/jrkuhn/Devel/kuhnlab/jprojects/DecoJ/branch/DecoJ_Client/fftwdist/osx/lib/libfftw3f.a; sourceTree = "<absolute>"; };
+		63800691136F62500068FE1A /* TestDecoJNA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestDecoJNA; sourceTree = BUILT_PRODUCTS_DIR; };
+		6380069C136F628B0068FE1A /* testDecoJNA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = testDecoJNA.cpp; path = ../test/testDecoJNA.cpp; sourceTree = SOURCE_ROOT; };
+		6380069D136F628B0068FE1A /* testDecoJNA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testDecoJNA.h; path = ../test/testDecoJNA.h; sourceTree = SOURCE_ROOT; };
+		D2AAC0630554660B00DB518D /* libDecoJNA.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDecoJNA.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6380068F136F62500068FE1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63800697136F626B0068FE1A /* libDecoJNA.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6380066D136F5FC00068FE1A /* libfftw3f.a in Frameworks */,
+				63862225136F70A90018E74F /* libfftw3f_threads.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* DecoJNA-Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				63862201136F6BCD0018E74F /* Headers */,
+				6380068D136F62330068FE1A /* Test */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				6380066A136F5FC00068FE1A /* libfftw3f_threads.a */,
+				6380066C136F5FC00068FE1A /* libfftw3f.a */,
+			);
+			name = "DecoJNA-Xcode";
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63800657136F5F7D0068FE1A /* procem.cpp */,
+				63800658136F5F7D0068FE1A /* process.cpp */,
+				6380065A136F5F7D0068FE1A /* proclls.cpp */,
+				6380065B136F5F7D0068FE1A /* procmap.cpp */,
+				6380065C136F5F7D0068FE1A /* stackdata.cpp */,
+				6380065E136F5F7D0068FE1A /* util.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* libDecoJNA.dylib */,
+				63800691136F62500068FE1A /* TestDecoJNA */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6380068D136F62330068FE1A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				6380069C136F628B0068FE1A /* testDecoJNA.cpp */,
+				6380069D136F628B0068FE1A /* testDecoJNA.h */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		63862201136F6BCD0018E74F /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				63800656136F5F7D0068FE1A /* deco.h */,
+				63800659136F5F7D0068FE1A /* process.h */,
+				6380065D136F5F7D0068FE1A /* stackdata.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6380065F136F5F7D0068FE1A /* deco.h in Headers */,
+				63800662136F5F7D0068FE1A /* process.h in Headers */,
+				63800666136F5F7D0068FE1A /* stackdata.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		63800690136F62500068FE1A /* TestDecoJNA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6380069B136F62770068FE1A /* Build configuration list for PBXNativeTarget "TestDecoJNA" */;
+			buildPhases = (
+				6380068E136F62500068FE1A /* Sources */,
+				6380068F136F62500068FE1A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63800696136F62670068FE1A /* PBXTargetDependency */,
+			);
+			name = TestDecoJNA;
+			productName = TestDecoJNA;
+			productReference = 63800691136F62500068FE1A /* TestDecoJNA */;
+			productType = "com.apple.product-type.tool";
+		};
+		D2AAC0620554660B00DB518D /* DecoJNA-Xcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "DecoJNA-Xcode" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DecoJNA-Xcode";
+			productName = "DecoJNA-Xcode";
+			productReference = D2AAC0630554660B00DB518D /* libDecoJNA.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "DecoJNA-Xcode" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* DecoJNA-Xcode */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* DecoJNA-Xcode */,
+				63800690136F62500068FE1A /* TestDecoJNA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6380068E136F62500068FE1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638006A0136F62C80068FE1A /* testDecoJNA.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63800660136F5F7D0068FE1A /* procem.cpp in Sources */,
+				63800661136F5F7D0068FE1A /* process.cpp in Sources */,
+				63800663136F5F7D0068FE1A /* proclls.cpp in Sources */,
+				63800664136F5F7D0068FE1A /* procmap.cpp in Sources */,
+				63800665136F5F7D0068FE1A /* stackdata.cpp in Sources */,
+				63800667136F5F7D0068FE1A /* util.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63800696136F62670068FE1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC0620554660B00DB518D /* DecoJNA-Xcode */;
+			targetProxy = 63800695136F62670068FE1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB914B08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = ../../fftwdist/osx/include;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					../../fftwdist/osx/lib,
+					"\"$(SRCROOT)/../../fftwdist/osx/lib\"",
+				);
+				PRODUCT_NAME = DecoJNA;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB914C08733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../fftwdist/osx/lib\"",
+				);
+				PRODUCT_NAME = "DecoJNA-Xcode";
+			};
+			name = Release;
+		};
+		1DEB914F08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB915008733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		63800693136F62510068FE1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = ../../fftwdist/osx/include;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = TestDecoJNA;
+			};
+			name = Debug;
+		};
+		63800694136F62510068FE1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = TestDecoJNA;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "DecoJNA-Xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914B08733D8E0010E9CD /* Debug */,
+				1DEB914C08733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "DecoJNA-Xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914F08733D8E0010E9CD /* Debug */,
+				1DEB915008733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6380069B136F62770068FE1A /* Build configuration list for PBXNativeTarget "TestDecoJNA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63800693136F62510068FE1A /* Debug */,
+				63800694136F62510068FE1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
