@@ -22,6 +22,7 @@ AS=as
 
 # Macros
 CND_PLATFORM=GNU-MacOSX
+CND_DLIB_EXT=dylib
 CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -34,12 +35,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/1360937237/process.o \
-	${OBJECTDIR}/_ext/1360937237/util.o \
 	${OBJECTDIR}/_ext/1360937237/procem.o \
+	${OBJECTDIR}/_ext/1360937237/process.o \
 	${OBJECTDIR}/_ext/1360937237/proclls.o \
+	${OBJECTDIR}/_ext/1360937237/procmap.o \
 	${OBJECTDIR}/_ext/1360937237/stackdata.o \
-	${OBJECTDIR}/_ext/1360937237/procmap.o
+	${OBJECTDIR}/_ext/1360937237/util.o
 
 
 # C Compiler Flags
@@ -64,37 +65,37 @@ LDLIBSOPTIONS=-L../../fftwdist/osx/lib -lfftw3f -lfftw3f_threads
 
 ../../dist/libDecoJNA.dylib: ${OBJECTFILES}
 	${MKDIR} -p ../../dist
-	${LINK.cc} -dynamiclib -install_name libDecoJNA.dylib -o ../../dist/libDecoJNA.dylib -fPIC ${OBJECTFILES} ${LDLIBSOPTIONS} 
-
-${OBJECTDIR}/_ext/1360937237/process.o: ../src/process.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
-	${RM} $@.d
-	$(COMPILE.cc) -g -I../../fftwdist/osx/include -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/process.o ../src/process.cpp
-
-${OBJECTDIR}/_ext/1360937237/util.o: ../src/util.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
-	${RM} $@.d
-	$(COMPILE.cc) -g -I../../fftwdist/osx/include -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/util.o ../src/util.cpp
+	${LINK.cc} -o ../../dist/libDecoJNA.dylib ${OBJECTFILES} ${LDLIBSOPTIONS} -dynamiclib -install_name libDecoJNA.dylib -fPIC
 
 ${OBJECTDIR}/_ext/1360937237/procem.o: ../src/procem.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
 	${RM} $@.d
 	$(COMPILE.cc) -g -I../../fftwdist/osx/include -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/procem.o ../src/procem.cpp
 
+${OBJECTDIR}/_ext/1360937237/process.o: ../src/process.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
+	${RM} $@.d
+	$(COMPILE.cc) -g -I../../fftwdist/osx/include -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/process.o ../src/process.cpp
+
 ${OBJECTDIR}/_ext/1360937237/proclls.o: ../src/proclls.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
 	${RM} $@.d
 	$(COMPILE.cc) -g -I../../fftwdist/osx/include -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/proclls.o ../src/proclls.cpp
+
+${OBJECTDIR}/_ext/1360937237/procmap.o: ../src/procmap.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
+	${RM} $@.d
+	$(COMPILE.cc) -g -I../../fftwdist/osx/include -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/procmap.o ../src/procmap.cpp
 
 ${OBJECTDIR}/_ext/1360937237/stackdata.o: ../src/stackdata.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
 	${RM} $@.d
 	$(COMPILE.cc) -g -I../../fftwdist/osx/include -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/stackdata.o ../src/stackdata.cpp
 
-${OBJECTDIR}/_ext/1360937237/procmap.o: ../src/procmap.cpp 
+${OBJECTDIR}/_ext/1360937237/util.o: ../src/util.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
 	${RM} $@.d
-	$(COMPILE.cc) -g -I../../fftwdist/osx/include -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/procmap.o ../src/procmap.cpp
+	$(COMPILE.cc) -g -I../../fftwdist/osx/include -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/util.o ../src/util.cpp
 
 # Subprojects
 .build-subprojects:

@@ -22,6 +22,7 @@ AS=as
 
 # Macros
 CND_PLATFORM=GNU-MacOSX
+CND_DLIB_EXT=dylib
 CND_CONF=Release
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -34,12 +35,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/1360937237/process.o \
-	${OBJECTDIR}/_ext/1360937237/util.o \
 	${OBJECTDIR}/_ext/1360937237/procem.o \
+	${OBJECTDIR}/_ext/1360937237/process.o \
 	${OBJECTDIR}/_ext/1360937237/proclls.o \
+	${OBJECTDIR}/_ext/1360937237/procmap.o \
 	${OBJECTDIR}/_ext/1360937237/stackdata.o \
-	${OBJECTDIR}/_ext/1360937237/procmap.o
+	${OBJECTDIR}/_ext/1360937237/util.o
 
 
 # C Compiler Flags
@@ -60,41 +61,41 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libDecoJNA-OSX.dylib
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libDecoJNA-OSX.${CND_DLIB_EXT}
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libDecoJNA-OSX.dylib: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libDecoJNA-OSX.${CND_DLIB_EXT}: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -dynamiclib -install_name libDecoJNA-OSX.dylib -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libDecoJNA-OSX.dylib -fPIC ${OBJECTFILES} ${LDLIBSOPTIONS} 
-
-${OBJECTDIR}/_ext/1360937237/process.o: ../src/process.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/process.o ../src/process.cpp
-
-${OBJECTDIR}/_ext/1360937237/util.o: ../src/util.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/util.o ../src/util.cpp
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libDecoJNA-OSX.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -dynamiclib -install_name libDecoJNA-OSX.${CND_DLIB_EXT} -fPIC
 
 ${OBJECTDIR}/_ext/1360937237/procem.o: ../src/procem.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/procem.o ../src/procem.cpp
 
+${OBJECTDIR}/_ext/1360937237/process.o: ../src/process.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/process.o ../src/process.cpp
+
 ${OBJECTDIR}/_ext/1360937237/proclls.o: ../src/proclls.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/proclls.o ../src/proclls.cpp
+
+${OBJECTDIR}/_ext/1360937237/procmap.o: ../src/procmap.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/procmap.o ../src/procmap.cpp
 
 ${OBJECTDIR}/_ext/1360937237/stackdata.o: ../src/stackdata.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/stackdata.o ../src/stackdata.cpp
 
-${OBJECTDIR}/_ext/1360937237/procmap.o: ../src/procmap.cpp 
+${OBJECTDIR}/_ext/1360937237/util.o: ../src/util.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1360937237
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/procmap.o ../src/procmap.cpp
+	$(COMPILE.cc) -O2 -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360937237/util.o ../src/util.cpp
 
 # Subprojects
 .build-subprojects:
@@ -102,7 +103,7 @@ ${OBJECTDIR}/_ext/1360937237/procmap.o: ../src/procmap.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libDecoJNA-OSX.dylib
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libDecoJNA-OSX.${CND_DLIB_EXT}
 
 # Subprojects
 .clean-subprojects:
